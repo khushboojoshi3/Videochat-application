@@ -1,0 +1,185 @@
+  body {
+    font-family: "Helvetica";
+    height: 100vh;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+  .bg-light {
+    background-color: #BEAEE2!important;
+  }
+
+  .navbar-brand{
+  font-family: 'Festive', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  }
+
+  h2 {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: black;
+  }
+  
+
+  input {
+    padding: 20px;
+    box-sizing: border-box;
+    background: #eee;
+    display: block;
+    width: 100%;
+    background: rgb(255, 253, 253);
+    font-family: Nunito;
+    font-size: 16px;
+  }
+  
+
+  .welcome{
+      font-size: 25px;
+  }
+  
+  .enterRoom{
+    display: flex;
+    justify-content: center;
+    padding: 5% 10%;
+  }
+  
+  #chat-app {
+    display: inline-block;
+    width: 500px;
+    height: 50vh;
+  }
+ 
+
+  #chat-window {
+    width: 499px;
+    margin-left: 1px;
+    height: 60vh;
+    overflow: auto;
+    background: #BEAEE2;
+  } 
+  
+  
+  #output p {
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+  }
+  
+  #feedback p {
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+  }
+  
+  #output strong {
+    color: #000000;
+  }
+  
+  label {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  
+  #join{
+    background: #141414;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  
+  #video-chat-lobby{ 
+    text-align: center;
+    background-color: #BEAEE2;
+  }
+   
+  .entry{
+  background-color: #BEAEE2;
+  height: 60vh;
+  padding: 8% 32%;
+  }
+
+  .welcome{
+    font-family: 'Castoro', serif;
+  }
+  .row{
+    height: 90vh;
+    background-color: white;
+  }
+
+  .heading{
+    padding-top: 21% ;
+    padding-left: 10%;
+    text-align: left;
+    font-family: 'Rye', cursive;
+    font-size: 3.5rem;
+    color: #3C5186;
+  	line-height: 1.5;
+  }
+
+  .title-image{
+    background-repeat: no-repeat;
+    background-position: 700px 400px;
+    height: 600px;
+    padding-top: 15%;
+  }
+
+  #after-entering-room{
+    height: 720px;
+    background-image: url(./images/bg10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #video-chat-room{
+    max-width: 400px;
+    max-height: 15rem;
+  }
+
+   #user-video{
+    width: 500px;
+    height: 70vh;
+    padding: 15px 0;
+    margin-bottom: 40px;
+  }
+
+  
+  #peer-video{
+    width: 500px;
+    height: 70vh;
+    padding: 15px 0;
+    margin-bottom: 40px;
+  } 
+
+  .btn-group{
+    background-color: #BEAEE2;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 ;
+  }
+
+  #muteButton, #hideCameraButton, #leaveRoomButton{
+    color: black;
+    margin: 0% 3% 0% 3%;
+  }
+
+#username ,#message, #send, #output{
+  width: 500px;
+  border-radius: 0%;
+}
+#send{
+  padding: 15px 0;
+}
+
+.text{
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  width: 500px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}

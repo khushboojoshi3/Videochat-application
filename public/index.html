@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Video Chat Application</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   
+       
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Castoro:ital@0;1&family=Festive&family=Rye&family=Uchen&display=swap" rel="stylesheet">
+       
+        <!-- CSS Link -->
+        <link href="/styles.css" rel="stylesheet" />
+
+
+        <!-- Font awesome  -->
+
+        <script src="https://kit.fontawesome.com/92d8fe4bca.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+            <div>
+              <nav class="navbar bg-light navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="">ViChat</a>
+            </nav>
+            </div> 
+        <div id="video-chat-lobby">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <h1 class="heading">Vichat, a free video calling and messaging application. 
+                      <br>Connect anywhere.
+                  </h1>
+                  </div>
+                <div class="col-lg-6 col-md-12">
+                  <img class="title-image" src="./images/bg2.jpg" alt="">
+                </div>
+            </div>
+            <div class="entry">
+                <h2 class="welcome">Enter Room Name</h2>
+                <input id="roomName" type="text" placeholder="Room Name" />
+                <button id="join" class="btn btn-light"><i class="fas fa-solid fa-door-open"></i>Join</button>
+            </div>
+            
+        </div>
+        
+        <div id="after-entering-room" style="display: none;">
+            <div id="video-chat-room" style="display: none;">
+                <video id="user-video" muted="muted"></video>
+                <video id="peer-video"></video>
+            </div>
+    
+            <!-- Chat box -->
+            <div id="chat-app" style="display: none;">
+                <h2 class="text">Chat</h2>
+                <input id="username" type="text" placeholder="Username" />
+                <div id="chat-window">
+                    <div id="output"></div>
+                </div>
+                <input id="message" type="text" placeholder="Message" />
+                <button id="send" type="button" class="btn btn-dark"><i class="fas fa-share"></i>  Send</button>
+            </div>
+        </div>
+        
+
+
+        <div class="btn-group" id="btn-group" style="display: none;">
+            
+<button id="muteButton" type="button" class="btn btn-outline-dark"><i class="fas fa-solid fa-microphone"></i>  Mute</button>
+<button id="hideCameraButton" type="button" class="btn btn-outline-dark"><i class="fas fa-solid fa-video"></i>  Hide Camera</button>
+<button id="leaveRoomButton" type="button" class="btn btn-outline-dark"><i class="fas fa-times"></i>  Leave Room</button>
+        </div>
+    </body>
+    
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <script src="/chat.js"></script>
+</html>

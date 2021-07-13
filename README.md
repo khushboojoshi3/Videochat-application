@@ -26,7 +26,7 @@ HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js, socket.io, webRTC, Heroku
 
 ![ss4](https://user-images.githubusercontent.com/64426164/125461536-e1a289d6-6f1e-4c95-bd0e-8551cc8f6c90.PNG)
 
-4. Other functionalities - Users are provided with different functionalities such as mute/unmute audio hide camera/show camera, leave room and chat box.
+4. Other functionalities - Users are provided with different functionalities such as mute/unmute audio, hide camera/show camera, leave room and chat box.
    
    Chat box- Firstly both users will enter their username and after that they can send messages to each other. Their messages can be seen in the output window along with their user names.
 
@@ -34,5 +34,23 @@ HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js, socket.io, webRTC, Heroku
 
 5. Hide camera - User can hide their video. Here user2 has hide his/her video that's why only user1's video can be seen on the screen
 
+![ss](https://user-images.githubusercontent.com/64426164/125463648-5a390198-280f-4b79-8601-17ec1cfcf2ba.PNG)
+
+6. Leave room - When user clicks on the leave room button then user will get back to the previous screen from where they can again enter the same room.
 
 ![ss6](https://user-images.githubusercontent.com/64426164/125461525-d9853eb5-0f16-4ef7-94b5-25179e9641d4.PNG)
+
+When the user clicks on the join button then he/she enters the same room in which they were previously present and all the chats between the two users are still present.
+
+![ss5](https://user-images.githubusercontent.com/64426164/125461531-4df1011a-78a0-4569-86a6-64f6b66bba0b.PNG)
+
+
+# Use of Agile methodology in my project
+***
+1. The whole project was built in 4 sprint.
+2. Each sprint lasted for one week.
+3. At the end of each sprint I used to have 1:1 meetings with my mentors to show them the current progress and what else can be done to make project better.
+
+# LAN v/s WAN
+***
+Vichat works only when both devices are connected with same wifi/network because here I have used *STUN* servers only. To make it work on **Wide Area Network** *TURN* servers would be required but they are not avalaible free of cost that's why I have used *STUN* servers.

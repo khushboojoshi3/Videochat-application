@@ -69,3 +69,7 @@ When the user clicks on the join button then he/she enters the same room in whic
 # LAN v/s WAN
 ***
 Vichat works only when both devices are connected with same wifi/network because here I have used *STUN* servers only. To make it work on **Wide Area Network** *TURN* servers would be required but they are not avalaible free of cost that's why I have used *STUN* servers.
+
+# Link of application
+***
+https://videonchat.herokuapp.com/
